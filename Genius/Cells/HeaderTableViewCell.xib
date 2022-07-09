@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="219" id="KGk-i7-Jjw" customClass="HeaderTableViewCell" customModule="Genius" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="219"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="219"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerbongs" translatesAutoresizingMaskIntoConstraints="NO" id="uhm-1U-2yO">
+                        <rect key="frame" x="0.0" y="0.0" width="379" height="219"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJq-JB-eHq">
+                        <rect key="frame" x="10" y="168" width="359" height="41"/>
+                        <string key="text">“Circles” is the fourth single from Post Malone’s third studio album, Hollywood’s Bleeding. The track continues the heartbreak theme from</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Malone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peE-Ld-gHr">
+                        <rect key="frame" x="10" y="127" width="359" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Circles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPe-07-xxS">
+                        <rect key="frame" x="10" y="83.5" width="359" height="33.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                        <color key="textColor" systemColor="systemYellowColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="uhm-1U-2yO" secondAttribute="bottom" id="3iu-K9-AFC"/>
+                    <constraint firstItem="dPe-07-xxS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="FRB-Wb-HoU"/>
+                    <constraint firstAttribute="bottom" secondItem="KJq-JB-eHq" secondAttribute="bottom" constant="10" id="Gaj-QY-lOI"/>
+                    <constraint firstItem="KJq-JB-eHq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="LKf-LZ-r3e"/>
+                    <constraint firstItem="KJq-JB-eHq" firstAttribute="top" secondItem="peE-Ld-gHr" secondAttribute="bottom" constant="20" id="PcU-I1-vZO"/>
+                    <constraint firstItem="peE-Ld-gHr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="SOw-CK-zDx"/>
+                    <constraint firstAttribute="trailing" secondItem="uhm-1U-2yO" secondAttribute="trailing" id="Vbf-P2-XWm"/>
+                    <constraint firstItem="uhm-1U-2yO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cQf-mT-d83"/>
+                    <constraint firstAttribute="trailing" secondItem="dPe-07-xxS" secondAttribute="trailing" constant="10" id="iFp-q9-pVo"/>
+                    <constraint firstAttribute="trailing" secondItem="peE-Ld-gHr" secondAttribute="trailing" constant="10" id="kXI-g6-17W"/>
+                    <constraint firstAttribute="trailing" secondItem="KJq-JB-eHq" secondAttribute="trailing" constant="10" id="l1L-ve-LLK"/>
+                    <constraint firstItem="peE-Ld-gHr" firstAttribute="top" secondItem="dPe-07-xxS" secondAttribute="bottom" constant="10" id="nyo-o3-sWj"/>
+                    <constraint firstItem="uhm-1U-2yO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ou7-0j-5b0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistLabel" destination="peE-Ld-gHr" id="9VU-9s-NUD"/>
+                <outlet property="img" destination="uhm-1U-2yO" id="Wxy-Sc-sIt"/>
+                <outlet property="plotLabel" destination="KJq-JB-eHq" id="QTM-jR-G2Y"/>
+                <outlet property="titleLabel" destination="dPe-07-xxS" id="oCo-5r-jiM"/>
+            </connections>
+            <point key="canvasLocation" x="180.43478260869566" y="155.02232142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="beerbongs" width="500" height="500"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

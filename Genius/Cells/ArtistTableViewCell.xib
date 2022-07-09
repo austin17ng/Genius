@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="KGk-i7-Jjw" customClass="ArtistTableViewCell" customModule="Genius" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="521" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="521" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beerbongs" translatesAutoresizingMaskIntoConstraints="NO" id="UXr-Ya-HkQ">
+                        <rect key="frame" x="20" y="20" width="210" height="210"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UXr-Ya-HkQ" secondAttribute="height" id="IvJ-2h-YqS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Weeknd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2q-IJ-6zj">
+                        <rect key="frame" x="240" y="21" width="251" height="208"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="T2q-IJ-6zj" firstAttribute="leading" secondItem="UXr-Ya-HkQ" secondAttribute="trailing" constant="10" id="21d-5e-tyN"/>
+                    <constraint firstItem="UXr-Ya-HkQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="6FJ-Bt-e5d"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="T2q-IJ-6zj" secondAttribute="trailing" constant="10" id="B58-in-3wU"/>
+                    <constraint firstItem="UXr-Ya-HkQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="ig5-oD-E4z"/>
+                    <constraint firstAttribute="bottom" secondItem="UXr-Ya-HkQ" secondAttribute="bottom" constant="20" id="mwP-fa-byz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="T2q-IJ-6zj" secondAttribute="bottom" constant="10" id="qFZ-DN-ahu"/>
+                    <constraint firstItem="T2q-IJ-6zj" firstAttribute="centerY" secondItem="UXr-Ya-HkQ" secondAttribute="centerY" id="tFr-5t-ttD"/>
+                    <constraint firstItem="T2q-IJ-6zj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="v25-BQ-2ST"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="img" destination="UXr-Ya-HkQ" id="txj-Gy-ssQ"/>
+                <outlet property="nameLabel" destination="T2q-IJ-6zj" id="hl5-Mb-DKO"/>
+            </connections>
+            <point key="canvasLocation" x="283.33333333333337" y="166.74107142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="beerbongs" width="500" height="500"/>
+    </resources>
+</document>
